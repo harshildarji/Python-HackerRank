@@ -3,9 +3,7 @@
 
 from itertools import combinations
 
-s, k = input().split()
-words = []
-for i in range(1, int(k)+1):
-    words.append([''.join(sorted(i)) for i in list(combinations(s.upper(), i))])
-for i in words:
-    print(*sorted(i), sep = '\n')
+s = input().split()
+for i in range(1, int(s[1])+1):
+    for j in combinations(sorted(s[0].upper()), i):
+        print(''.join(j))
