@@ -1,7 +1,7 @@
 # Class 2 - Find the Torsional Angle
 # https://www.hackerrank.com/challenges/class-2-find-the-torsional-angle/problem
 
-import math
+import math
 
 class vector:
     def __init__(self, x=0, y=0, z=0):
