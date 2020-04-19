@@ -1,8 +1,6 @@
 # Decorators 2 - Name Directory
 # https://www.hackerrank.com/challenges/decorators-2-name-directory/problem
 
-import operator
-
 def person_lister(f):
     def inner(people):
         return map(f, sorted(people, key=lambda x: int(x[2])))

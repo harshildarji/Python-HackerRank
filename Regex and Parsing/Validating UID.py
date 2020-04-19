@@ -11,7 +11,7 @@ for _ in range(int(input())):
         assert not re.search(r'[^a-zA-Z0-9]', u)
         assert not re.search(r'(.)\1', u)
         assert len(u) == 10
-    except:
+    except Exception:
         print('Invalid')
     else:
         print('Valid')
